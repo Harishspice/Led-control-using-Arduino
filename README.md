@@ -1,4 +1,7 @@
-# Led-control-using-Arduino
+### NAME : HARISH R
+### REG.NO : 212222110012
+
+#  EX-NO : 1    Led control using Arduino
 
 ## AIM
 To design and implement a system for LED control using an Arduino microcontroller and a push button.
@@ -57,10 +60,42 @@ Security System Indicator </br>
 Emergency Signaling System </br>
 Weighing Machines </br>
 
-## CIRCUIT DIAGRAM
+## CIRCUIT DIAGRAM:
+<img width="868" height="608" alt="image" src="https://github.com/user-attachments/assets/8e2f6351-f0bb-4841-aee2-7428191d24f1" />
 
-## PROGRAM
 
-## OUTPUT
+## PROGRAM:
+```
+void setup() {
+  pinMode(10,OUTPUT);
+  pinMode(4,INPUT);
+}
+
+void loop() {
+  int button_status=digitalRead(4);
+  if (button_status==HIGH)
+  {
+    digitalWrite(10,HIGH);
+    delay(100);
+    digitalWrite(10,LOW);
+    delay(100);
+  }
+  else
+  {
+    digitalWrite(10,LOW);
+  }
+
+}
+```
+
+
+## OUTPUT:
+
+<img width="1251" height="858" alt="image" src="https://github.com/user-attachments/assets/9fdd10a7-f5b9-440b-a2fb-380734709230" />
+
+<img width="1249" height="852" alt="image" src="https://github.com/user-attachments/assets/d8e78a5a-92d7-44a0-90cf-f7c50bf775b1" />
+
+
 
 ## RESULT
+The design and implement a system for LED control using an Arduino microcontroller and a push button has completed and verified successfully.
